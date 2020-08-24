@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				box-sizing: border-box;
+				font-family: "Open Sans", sans-serif;
+			}
+			.container {
+				width: 100vw;
+				height: 100vh;
+				background: linear-gradient(#ffefba, #ffffff);
+			}
+			.sign-up {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border: 1px solid #4e54c8;
+				padding: 20px;
+				box-shadow: 0 0 2px #4e54c8;
+				border-radius: 5px;
+			}
+			.sign-up div {
+				margin: 20px 0px;
+			}
+			label {
+				display: inline-block;
+				width: 100px;
+			}
+			input {
+				width: 150px;
+				height: 25px;
+				border: 1px solid #4e54c8;
+				border-radius: 5px;
+			}
+			textarea {
+				border: 1px solid #4e54c8;
+				border-radius: 5px;
+				font-size: medium;
+			}
+			#submit {
+				position: relative;
+				left: 50%;
+
+				transform: translateX(-50%);
+				padding: 5px;
+			}
+			.gender-btn {
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="" alt="" />
+			<div class="sign-up">
+				<form action="index.html" method="POST">
+					<div>
+						<label for="name">Name</label>
+						<input type="text" id="name" />
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" id="password" />
+					</div>
+					<div>
+						<label for="phone">
+							Phone Number
+						</label>
+						<input type="number" id="phone" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" />
+					</div>
+					<div id="gender">
+						<label for="gender">Gender</label>
+						<select name="gender" id="gender">
+							<option value="male" class="gender-btn">male</option>
+							<option value="female" class="gender-btn">female</option>
+						</select>
+					</div>
+					<div>
+						<label for="message">
+							Message
+							<textarea
+								name="message"
+								id="message"
+								cols="30"
+								rows="4"
+							></textarea>
+						</label>
+					</div>
+				</form>
+				<button id="submit">Submit</button>
+			</div>
+		</div>
+	</body>
+</html>

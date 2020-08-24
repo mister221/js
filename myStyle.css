@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+body {
+	background: url("./images/black.jpg");
+	background-size: cover;
+}
+.container {
+	width: 60%;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 10px;
+
+	background-image: url("./images/wood.jpg");
+	background-size: cover;
+}
+
+.players {
+	display: flex;
+	height: 60%;
+}
+
+.player1,
+.player2 {
+	width: 50%;
+
+	background-color: green;
+	border: 2px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	border-radius: 10px;
+}
+.player1 {
+	border-bottom-left-radius: 3.5rem;
+}
+.player2 {
+	border-bottom-right-radius: 3.5rem;
+}
+
+.share {
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem;
+	border-bottom: 2px solid black;
+	color: black;
+}
+
+.heading {
+	text-align: center;
+	margin: 1rem auto;
+}
+
+.command {
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+button {
+	padding: 0.5rem;
+	border-radius: 5px;
+	color: black;
+}
+
+.command button {
+	margin: 0 2rem;
+}
+
+.score {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem 0;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0.4rem;
+}
+
+h2,
+h4 {
+	letter-spacing: 0.1rem;
+	line-height: 1.8;
+}
+h2 {
+	font-size: 3rem;
+}
+
+@media (max-width: 320px) {
+	.container {
+		width: 96%;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+	.container {
+		width: 90%;
+	}
+
+	html {
+		font-size: 10px;
+	}
+}
